@@ -1,6 +1,6 @@
 { pkgs }: {
   deps = [
-    pkgs.jdk17
+    pkgs.graalvm-ce
     pkgs.jdt-language-server
   ];
 }
