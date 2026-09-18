@@ -1,5 +1,5 @@
 modules = ["java-graalvm22.3", "nix"]
-run = "echo 'Please use the Shell tab to run your programs:' && echo '  javac Lab2App.java && java Lab2App'"
+run = "javac -cp \".:cardgames.jar\" Lab3App.java && java -cp \".:cardgames.jar\" Lab3App"
 
 [nix]
 channel = "stable-25_05"
