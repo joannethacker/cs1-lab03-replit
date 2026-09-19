@@ -1,5 +1,6 @@
-modules = ["java-graalvm22.3", "nix"]
-run = "javac -cp \".:cardgames.jar\" Lab3App.java && java -cp \".:cardgames.jar\" Lab3App"
+modules = ["nix"]
+audio = false
+run = "javac -cp \"$REPL_HOME/cardgames.jar:$REPL_HOME\" Lab3App.java && java -Dsun.java2d.fontpath=$REPL_HOME -cp \"$REPL_HOME/cardgames.jar:$REPL_HOME\" Lab3App"
 
 [nix]
 channel = "stable-25_05"
